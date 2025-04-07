@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/admin")
 
-public class MemberController {
+public class AdminController {
 
 
     @GetMapping("/main")
