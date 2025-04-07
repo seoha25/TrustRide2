@@ -1,20 +1,16 @@
-package com.fastcampus.trustRide.controller.admin;
-
+package com.fastcampus.trustRide.controller.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("/member")
+public class UserController {
 
-public class MemberController {
-
-
-    @GetMapping("/main")
+    @GetMapping("/")
     public String main(){
-        return "admin/main";
-
+        return "user/main";
     }
 
 }
