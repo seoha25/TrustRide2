@@ -10,17 +10,12 @@
     </settings>
 
     <typeAliases>
-<<<<<<< Updated upstream
-        <typeAlias type="com.fastcampus.gearshift.dto.CouponDto" alias="couponDto" ></typeAlias>
 
-
-    </typeAliases>
-=======
         <typeAlias type="com.fastcampus.trustRide.dto.CarDto" alias="carDto"></typeAlias>
         <typeAlias type="com.fastcampus.trustRide.dto.ImageDto" alias="imageDto"></typeAlias>
 
     </typeAliases>
 
 
->>>>>>> Stashed changes
+
 </configuration>
