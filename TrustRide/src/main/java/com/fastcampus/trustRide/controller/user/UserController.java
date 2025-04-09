@@ -28,7 +28,6 @@ public class UserController {
         return "user/main";
     }
 
-
     // 고객 회원가입 페이지 이동
     @GetMapping("/register")
     public String goToRegisterPage() {

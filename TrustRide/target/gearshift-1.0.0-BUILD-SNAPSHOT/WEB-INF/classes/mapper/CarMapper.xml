@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="carMapper">
+
+    <!-- 차량 기본 정보 등록 -->
+<insert id ="insertCarInformation" useGeneratedKeys="true" keyProperty="carInfoId">
+    INSERT INTO car_info(
+          model_name,
+          engine_capacity,
+            fuel_type,
+            transmission,
+        color ,
+        car_price
+
+
+    ) VALUES (
+              #{modelName},#{engine_capacity},#{fuel_type}, #{transmission},#{color},#{car_price}
+                 )
+
+</insert>
+
+
+
+    <!-- 차량 상세 정보 등록 -->
+    <insert id="insertCarBasicInfo">
+        INSERT INTO information (
+          car_info_id,
+                                 title,
+                                 description,
+                                 mileage,
+                                 vin_number,
+                                 offer_report_number,
+                                 manufacture_year,
+                                 previous_registration_fee,
+                                 maintenance_cost,
+                                 item_price,
+                                 extended_warranty_price,
+                                 car_num,
+                                 car_location
+
+
+        ) VALUES (
+                  #{title}, #{description},#{mileage},#{vinNumber},#{offerReportNumber},#{manufactureYear},
+                  #{previousRegistrationFee},#{maintenanceCost},#{itemPrice},#{extendedWarrantyPrice},#{carNum},#{carLocation}
+        )
+
+
+
+    </insert>
+
+    <!-- 이미지 등록 -->
+    <insert id="insertCarImage" parameterType="imageDto">
+        INSERT INTO image(
+                          image_url,
+                          image_type,
+                          car_info_id,
+                          is_thumbnail
+        )values (
+                 #{image_url},
+                 #{imageType},
+                 #{carInfoId},
+                 #{isThumbnail}
+                 )
+    </insert>
+
+
+
+
+
+
+
+
+
+</mapper>
+
