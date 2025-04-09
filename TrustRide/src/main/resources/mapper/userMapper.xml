@@ -5,6 +5,16 @@
 
 <mapper namespace="userMapper">
 
+    // 사용자 등록
+    <insert id="insertUser" parameterType="com.fastcampus.trustRide.dto.UserDto">
+        INSERT INTO user (user_email, user_password, user_phone_number, user_name)
+        VALUES (#{userEmail}, #{userPassword}, #{userPhoneNumber}, #{userName})
+    </insert>
 
+    //
+    <select id="findByEmail" parameterType="String" resultType="com.fastcampus.trustRide.dto.UserDto">
+        SELECT *
+        FROM user WHERE user_email = #{email}
+    </select>
 
 </mapper>

@@ -10,9 +10,9 @@
     </settings>
 
     <typeAliases>
+        <typeAlias type="com.fastcampus.trustRide.dto.UserDto" alias="userDto" ></typeAlias>
         <typeAlias type="com.fastcampus.trustRide.dto.CarDto" alias="carDto"></typeAlias>
         <typeAlias type="com.fastcampus.trustRide.dto.ImageDto" alias="imageDto"></typeAlias>
-
     </typeAliases>
 
 
