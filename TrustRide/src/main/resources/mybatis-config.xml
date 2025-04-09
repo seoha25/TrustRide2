@@ -10,7 +10,7 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.fastcampus.gearshift.dto.CouponDto" alias="couponDto" ></typeAlias>
+        <typeAlias type="com.fastcampus.trustRide.dto.UserDto" alias="userDto" ></typeAlias>
 
 
     </typeAliases>
